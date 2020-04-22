@@ -1,0 +1,64 @@
+[2020-04-23T00:17:58,844][INFO ][o.e.e.NodeEnvironment    ] [XMvBmoW] using [1] data paths, mounts [[/ (/dev/disk1s5)]], net usable_space [42.6gb], net total_space [465.6gb], types [apfs]
+[2020-04-23T00:17:58,846][INFO ][o.e.e.NodeEnvironment    ] [XMvBmoW] heap size [989.8mb], compressed ordinary object pointers [true]
+[2020-04-23T00:17:58,864][INFO ][o.e.n.Node               ] [XMvBmoW] node name derived from node ID [XMvBmoWjSte7s-FKB2vppA]; set [node.name] to override
+[2020-04-23T00:17:58,865][INFO ][o.e.n.Node               ] [XMvBmoW] version[6.8.7], pid[76640], build[oss/tar/c63e621/2020-02-26T14:38:01.193138Z], OS[Mac OS X/10.15.3/x86_64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_162/25.162-b12]
+[2020-04-23T00:17:58,865][INFO ][o.e.n.Node               ] [XMvBmoW] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=/var/folders/yh/7v4l0kqx6_xcqszy_ny9dpqnt0zckc/T/elasticsearch-3501832423218458071, -XX:+HeapDumpOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintTenuringDistribution, -XX:+PrintGCApplicationStoppedTime, -Xloggc:logs/gc.log, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=32, -XX:GCLogFileSize=64m, -Des.path.home=/usr/local/Cellar/elasticsearch/6.8.7/libexec, -Des.path.conf=/usr/local/etc/elasticsearch, -Des.distribution.flavor=oss, -Des.distribution.type=tar]
+[2020-04-23T00:17:59,457][INFO ][o.e.p.PluginsService     ] [XMvBmoW] loaded module [aggs-matrix-stats]
+[2020-04-23T00:17:59,457][INFO ][o.e.p.PluginsService     ] [XMvBmoW] loaded module [analysis-common]
+[2020-04-23T00:17:59,457][INFO ][o.e.p.PluginsService     ] [XMvBmoW] loaded module [ingest-common]
+[2020-04-23T00:17:59,457][INFO ][o.e.p.PluginsService     ] [XMvBmoW] loaded module [ingest-geoip]
+[2020-04-23T00:17:59,457][INFO ][o.e.p.PluginsService     ] [XMvBmoW] loaded module [ingest-user-agent]
+[2020-04-23T00:17:59,457][INFO ][o.e.p.PluginsService     ] [XMvBmoW] loaded module [lang-expression]
+[2020-04-23T00:17:59,457][INFO ][o.e.p.PluginsService     ] [XMvBmoW] loaded module [lang-mustache]
+[2020-04-23T00:17:59,457][INFO ][o.e.p.PluginsService     ] [XMvBmoW] loaded module [lang-painless]
+[2020-04-23T00:17:59,458][INFO ][o.e.p.PluginsService     ] [XMvBmoW] loaded module [mapper-extras]
+[2020-04-23T00:17:59,458][INFO ][o.e.p.PluginsService     ] [XMvBmoW] loaded module [parent-join]
+[2020-04-23T00:17:59,458][INFO ][o.e.p.PluginsService     ] [XMvBmoW] loaded module [percolator]
+[2020-04-23T00:17:59,458][INFO ][o.e.p.PluginsService     ] [XMvBmoW] loaded module [rank-eval]
+[2020-04-23T00:17:59,458][INFO ][o.e.p.PluginsService     ] [XMvBmoW] loaded module [reindex]
+[2020-04-23T00:17:59,458][INFO ][o.e.p.PluginsService     ] [XMvBmoW] loaded module [repository-url]
+[2020-04-23T00:17:59,458][INFO ][o.e.p.PluginsService     ] [XMvBmoW] loaded module [transport-netty4]
+[2020-04-23T00:17:59,458][INFO ][o.e.p.PluginsService     ] [XMvBmoW] loaded module [tribe]
+[2020-04-23T00:17:59,458][INFO ][o.e.p.PluginsService     ] [XMvBmoW] no plugins loaded
+[2020-04-23T00:18:01,612][INFO ][o.e.d.DiscoveryModule    ] [XMvBmoW] using discovery type [zen] and host providers [settings]
+[2020-04-23T00:18:02,003][INFO ][o.e.n.Node               ] [XMvBmoW] initialized
+[2020-04-23T00:18:02,003][INFO ][o.e.n.Node               ] [XMvBmoW] starting ...
+[2020-04-23T00:18:02,117][INFO ][o.e.t.TransportService   ] [XMvBmoW] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2020-04-23T00:18:05,172][INFO ][o.e.c.s.MasterService    ] [XMvBmoW] zen-disco-elected-as-master ([0] nodes joined), reason: new_master {XMvBmoW}{XMvBmoWjSte7s-FKB2vppA}{6Xg9cVKKSQ6kAwDAV0Z-UQ}{127.0.0.1}{127.0.0.1:9300}
+[2020-04-23T00:18:05,176][INFO ][o.e.c.s.ClusterApplierService] [XMvBmoW] new_master {XMvBmoW}{XMvBmoWjSte7s-FKB2vppA}{6Xg9cVKKSQ6kAwDAV0Z-UQ}{127.0.0.1}{127.0.0.1:9300}, reason: apply cluster state (from master [master {XMvBmoW}{XMvBmoWjSte7s-FKB2vppA}{6Xg9cVKKSQ6kAwDAV0Z-UQ}{127.0.0.1}{127.0.0.1:9300} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)]])
+[2020-04-23T00:18:05,193][INFO ][o.e.h.n.Netty4HttpServerTransport] [XMvBmoW] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2020-04-23T00:18:05,193][INFO ][o.e.n.Node               ] [XMvBmoW] started
+[2020-04-23T00:18:05,310][INFO ][o.e.g.GatewayService     ] [XMvBmoW] recovered [1] indices into cluster_state
+[2020-04-23T00:18:05,530][INFO ][o.e.c.r.a.AllocationService] [XMvBmoW] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[urlsearch][0]] ...]).
+[2020-04-23T00:18:35,199][WARN ][o.e.c.r.a.DiskThresholdMonitor] [XMvBmoW] high disk watermark [90%] exceeded on [XMvBmoWjSte7s-FKB2vppA][XMvBmoW][/usr/local/var/lib/elasticsearch/nodes/0] free: 42.6gb[9.1%], shards will be relocated away from this node
+[2020-04-23T00:18:35,199][INFO ][o.e.c.r.a.DiskThresholdMonitor] [XMvBmoW] rerouting shards: [high disk watermark exceeded on one or more nodes]
+[2020-04-23T00:19:05,210][WARN ][o.e.c.r.a.DiskThresholdMonitor] [XMvBmoW] high disk watermark [90%] exceeded on [XMvBmoWjSte7s-FKB2vppA][XMvBmoW][/usr/local/var/lib/elasticsearch/nodes/0] free: 43.6gb[9.3%], shards will be relocated away from this node
+[2020-04-23T00:19:35,214][WARN ][o.e.c.r.a.DiskThresholdMonitor] [XMvBmoW] high disk watermark [90%] exceeded on [XMvBmoWjSte7s-FKB2vppA][XMvBmoW][/usr/local/var/lib/elasticsearch/nodes/0] free: 43.6gb[9.3%], shards will be relocated away from this node
+[2020-04-23T00:19:35,214][INFO ][o.e.c.r.a.DiskThresholdMonitor] [XMvBmoW] rerouting shards: [high disk watermark exceeded on one or more nodes]
+[2020-04-23T00:20:05,220][WARN ][o.e.c.r.a.DiskThresholdMonitor] [XMvBmoW] high disk watermark [90%] exceeded on [XMvBmoWjSte7s-FKB2vppA][XMvBmoW][/usr/local/var/lib/elasticsearch/nodes/0] free: 43.6gb[9.3%], shards will be relocated away from this node
+[2020-04-23T00:20:35,227][WARN ][o.e.c.r.a.DiskThresholdMonitor] [XMvBmoW] high disk watermark [90%] exceeded on [XMvBmoWjSte7s-FKB2vppA][XMvBmoW][/usr/local/var/lib/elasticsearch/nodes/0] free: 43.6gb[9.3%], shards will be relocated away from this node
+[2020-04-23T00:20:35,227][INFO ][o.e.c.r.a.DiskThresholdMonitor] [XMvBmoW] rerouting shards: [high disk watermark exceeded on one or more nodes]
+[2020-04-23T00:21:05,230][WARN ][o.e.c.r.a.DiskThresholdMonitor] [XMvBmoW] high disk watermark [90%] exceeded on [XMvBmoWjSte7s-FKB2vppA][XMvBmoW][/usr/local/var/lib/elasticsearch/nodes/0] free: 43.6gb[9.3%], shards will be relocated away from this node
+[2020-04-23T00:21:35,234][WARN ][o.e.c.r.a.DiskThresholdMonitor] [XMvBmoW] high disk watermark [90%] exceeded on [XMvBmoWjSte7s-FKB2vppA][XMvBmoW][/usr/local/var/lib/elasticsearch/nodes/0] free: 43.6gb[9.3%], shards will be relocated away from this node
+[2020-04-23T00:21:35,235][INFO ][o.e.c.r.a.DiskThresholdMonitor] [XMvBmoW] rerouting shards: [high disk watermark exceeded on one or more nodes]
+[2020-04-23T00:22:05,242][WARN ][o.e.c.r.a.DiskThresholdMonitor] [XMvBmoW] high disk watermark [90%] exceeded on [XMvBmoWjSte7s-FKB2vppA][XMvBmoW][/usr/local/var/lib/elasticsearch/nodes/0] free: 43.6gb[9.3%], shards will be relocated away from this node
+[2020-04-23T00:22:35,249][WARN ][o.e.c.r.a.DiskThresholdMonitor] [XMvBmoW] high disk watermark [90%] exceeded on [XMvBmoWjSte7s-FKB2vppA][XMvBmoW][/usr/local/var/lib/elasticsearch/nodes/0] free: 43.6gb[9.3%], shards will be relocated away from this node
+[2020-04-23T00:22:35,249][INFO ][o.e.c.r.a.DiskThresholdMonitor] [XMvBmoW] rerouting shards: [high disk watermark exceeded on one or more nodes]
+[2020-04-23T00:23:05,255][WARN ][o.e.c.r.a.DiskThresholdMonitor] [XMvBmoW] high disk watermark [90%] exceeded on [XMvBmoWjSte7s-FKB2vppA][XMvBmoW][/usr/local/var/lib/elasticsearch/nodes/0] free: 43.6gb[9.3%], shards will be relocated away from this node
+[2020-04-23T00:23:35,259][WARN ][o.e.c.r.a.DiskThresholdMonitor] [XMvBmoW] high disk watermark [90%] exceeded on [XMvBmoWjSte7s-FKB2vppA][XMvBmoW][/usr/local/var/lib/elasticsearch/nodes/0] free: 43.6gb[9.3%], shards will be relocated away from this node
+[2020-04-23T00:23:35,259][INFO ][o.e.c.r.a.DiskThresholdMonitor] [XMvBmoW] rerouting shards: [high disk watermark exceeded on one or more nodes]
+[2020-04-23T00:24:05,264][WARN ][o.e.c.r.a.DiskThresholdMonitor] [XMvBmoW] high disk watermark [90%] exceeded on [XMvBmoWjSte7s-FKB2vppA][XMvBmoW][/usr/local/var/lib/elasticsearch/nodes/0] free: 43.6gb[9.3%], shards will be relocated away from this node
+[2020-04-23T00:24:35,270][WARN ][o.e.c.r.a.DiskThresholdMonitor] [XMvBmoW] high disk watermark [90%] exceeded on [XMvBmoWjSte7s-FKB2vppA][XMvBmoW][/usr/local/var/lib/elasticsearch/nodes/0] free: 43.6gb[9.3%], shards will be relocated away from this node
+[2020-04-23T00:24:35,270][INFO ][o.e.c.r.a.DiskThresholdMonitor] [XMvBmoW] rerouting shards: [high disk watermark exceeded on one or more nodes]
+[2020-04-23T00:25:05,277][WARN ][o.e.c.r.a.DiskThresholdMonitor] [XMvBmoW] high disk watermark [90%] exceeded on [XMvBmoWjSte7s-FKB2vppA][XMvBmoW][/usr/local/var/lib/elasticsearch/nodes/0] free: 43.6gb[9.3%], shards will be relocated away from this node
+[2020-04-23T00:25:35,284][WARN ][o.e.c.r.a.DiskThresholdMonitor] [XMvBmoW] high disk watermark [90%] exceeded on [XMvBmoWjSte7s-FKB2vppA][XMvBmoW][/usr/local/var/lib/elasticsearch/nodes/0] free: 43.6gb[9.3%], shards will be relocated away from this node
+[2020-04-23T00:25:35,284][INFO ][o.e.c.r.a.DiskThresholdMonitor] [XMvBmoW] rerouting shards: [high disk watermark exceeded on one or more nodes]
+[2020-04-23T00:26:05,292][WARN ][o.e.c.r.a.DiskThresholdMonitor] [XMvBmoW] high disk watermark [90%] exceeded on [XMvBmoWjSte7s-FKB2vppA][XMvBmoW][/usr/local/var/lib/elasticsearch/nodes/0] free: 43.6gb[9.3%], shards will be relocated away from this node
+[2020-04-23T00:26:35,298][WARN ][o.e.c.r.a.DiskThresholdMonitor] [XMvBmoW] high disk watermark [90%] exceeded on [XMvBmoWjSte7s-FKB2vppA][XMvBmoW][/usr/local/var/lib/elasticsearch/nodes/0] free: 43.6gb[9.3%], shards will be relocated away from this node
+[2020-04-23T00:26:35,299][INFO ][o.e.c.r.a.DiskThresholdMonitor] [XMvBmoW] rerouting shards: [high disk watermark exceeded on one or more nodes]
+[2020-04-23T00:27:05,304][WARN ][o.e.c.r.a.DiskThresholdMonitor] [XMvBmoW] high disk watermark [90%] exceeded on [XMvBmoWjSte7s-FKB2vppA][XMvBmoW][/usr/local/var/lib/elasticsearch/nodes/0] free: 43.6gb[9.3%], shards will be relocated away from this node
+[2020-04-23T00:27:35,308][WARN ][o.e.c.r.a.DiskThresholdMonitor] [XMvBmoW] high disk watermark [90%] exceeded on [XMvBmoWjSte7s-FKB2vppA][XMvBmoW][/usr/local/var/lib/elasticsearch/nodes/0] free: 43.6gb[9.3%], shards will be relocated away from this node
+[2020-04-23T00:27:35,309][INFO ][o.e.c.r.a.DiskThresholdMonitor] [XMvBmoW] rerouting shards: [high disk watermark exceeded on one or more nodes]
+[2020-04-23T00:28:05,315][WARN ][o.e.c.r.a.DiskThresholdMonitor] [XMvBmoW] high disk watermark [90%] exceeded on [XMvBmoWjSte7s-FKB2vppA][XMvBmoW][/usr/local/var/lib/elasticsearch/nodes/0] free: 43.6gb[9.3%], shards will be relocated away from this node
+[2020-04-23T00:28:35,322][WARN ][o.e.c.r.a.DiskThresholdMonitor] [XMvBmoW] high disk watermark [90%] exceeded on [XMvBmoWjSte7s-FKB2vppA][XMvBmoW][/usr/local/var/lib/elasticsearch/nodes/0] free: 43.6gb[9.3%], shards will be relocated away from this node
+[2020-04-23T00:28:35,322][INFO ][o.e.c.r.a.DiskThresholdMonitor] [XMvBmoW] rerouting shards: [high disk watermark exceeded on one or more nodes]

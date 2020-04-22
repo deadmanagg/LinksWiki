@@ -1,0 +1,20 @@
+
+
+zookeeper-server-start /usr/local/etc/kafka/zookeeper.properties
+
+kafka-server-start /usr/local/etc/kafka/server.properties
+
+
+elasticsearch
+
+python manage.py runserver
+
+ curl -XPUT -H "Content-Type: application/json" http://localhost:9200/_all/_settings -d '{"index.blocks.read_only_allow_delete": null}'
+
+
+
+echo ruok  | nc localhost 2181
+ps -ef | grep /usr/local/etc/kafka/server.properties
+
+ps -ef | grep elasticsearch
+curl localhost:8000/hearbeat/

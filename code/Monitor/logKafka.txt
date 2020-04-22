@@ -794,3 +794,5 @@
 [2020-04-23 00:22:17,559] INFO [GroupCoordinator 0]: Preparing to rebalance group my_group in state PreparingRebalance with old generation 31 (__consumer_offsets-12) (reason: Updating metadata for member kafka-python-2.0.1-103a1677-c320-4a95-89af-1f2ab37bdf96) (kafka.coordinator.group.GroupCoordinator)
 [2020-04-23 00:22:19,854] INFO [GroupCoordinator 0]: Stabilized group my_group generation 32 (__consumer_offsets-12) (kafka.coordinator.group.GroupCoordinator)
 [2020-04-23 00:22:19,856] INFO [GroupCoordinator 0]: Assignment received from leader for group my_group for generation 32 (kafka.coordinator.group.GroupCoordinator)
+[2020-04-23 00:29:24,212] INFO [GroupMetadataManager brokerId=0] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2020-04-23 00:39:24,221] INFO [GroupMetadataManager brokerId=0] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)

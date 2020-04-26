@@ -18,3 +18,5 @@ ps -ef | grep /usr/local/etc/kafka/server.properties
 
 ps -ef | grep elasticsearch
 curl localhost:8000/hearbeat/
+
+ps auxw | grep runserver

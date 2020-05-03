@@ -8,6 +8,7 @@ whiteListedUrls = []
 
 client = MongoClient('localhost:27017')
 collection = client.SampleData.SampleData
+monCollection = client.Monitoring.Listener
 
 def buildWhilteListedUrls():
     urlCol = client.SampleData.WhiteListedUrls
@@ -31,6 +32,9 @@ def validateUrl(message):
 
 def insertMessage(message):
     collection.insert_one(message)
+
+def insertMonitoring(message):
+    monCollection.insert_one(message)
         
     
 
@@ -41,18 +45,23 @@ def runConsumer():
     consumer = KafkaConsumer(
         'test3',
          bootstrap_servers=['localhost:9092'],
-         auto_offset_reset='earliest',
          group_id = 'my_group',
-         value_deserializer=lambda x: loads(x.decode('utf-8')),
-         enable_auto_commit=True)
+         value_deserializer=lambda x: loads(x.decode('utf-8'))
+         )
     
     
     for message in consumer:
         message = message.value
-        print(message['url'])
-        if (validateUrl(message)):
-            print("Above url is stored")
-            insertMessage(message)
+        
+        if 'test' in message.keys():
+            print(message)
+            insertMonitoring(message)
+        else:
+            print(message['url'])
+            if (validateUrl(message)):
+                print("Above url is stored")
+                insertMessage(message)
+        consumer.commit()
     
 
 runConsumer()  

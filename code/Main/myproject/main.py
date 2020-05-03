@@ -32,3 +32,6 @@ def data(request):
     response["Access-Control-Max-Age"] = "1000"
     
     return response
+
+def heartbeat(request):
+    return HttpResponse("Ok", content_type='text/html', charset='utf-8')

@@ -12,6 +12,7 @@ python manage.py runserver
  curl -XPUT -H "Content-Type: application/json" http://localhost:9200/_all/_settings -d '{"index.blocks.read_only_allow_delete": null}'
 
 
+npm run dev
 
 echo ruok  | nc localhost 2181
 ps -ef | grep /usr/local/etc/kafka/server.properties
@@ -20,3 +21,10 @@ ps -ef | grep elasticsearch
 curl localhost:8000/hearbeat/
 
 ps auxw | grep runserver
+
+
+pkill -f elasticsearch
+
+
+
+python /Users/deepansh.aggarwal/Study/Projects/LinksWiki/code/GUS/GusHistoryUpdate.py

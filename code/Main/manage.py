@@ -5,7 +5,13 @@ import sys
 
 
 def main():
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'myproject.settings')
+    path = '/Users/deepansh.aggarwal/Study/Projects/LinksWiki/code/Main/myproject'
+    if path not in sys.path:
+        sys.path.append(path)
+
+    os.environ['DJANGO_SETTINGS_MODULE'] = 'myproject.settings'
+
+    #os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'myproject.settings')
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:

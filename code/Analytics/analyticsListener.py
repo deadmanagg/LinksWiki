@@ -13,10 +13,14 @@ from pymongo import MongoClient
 
 client = MongoClient('localhost:27017')
 collection = client.Anaytics.SearchResult
+monCollection = client.Monitoring.Analytics
 
 def insertMessage(message):
     collection.insert_one(message)
-        
+
+def insertMonitoring(message):
+    monCollection.insert_one(message)
+       
 def runConsumer():    
     consumer = KafkaConsumer(
         'searchresult',
@@ -29,7 +33,10 @@ def runConsumer():
     
     for message in consumer:
         message = message.value
-        insertMessage(message)
+        if 'test' in message.keys():
+            insertMonitoring(message)
+        else:
+            insertMessage(message)
 
 runConsumer()
     

@@ -53,5 +53,5 @@ def populateSampleData():
         newvalue = { "$set": { "processed": "1" } }
         gusDetailCol.update_one(row, newvalue)
 
-iterateGusUrls()
-populateSampleData()
+#iterateGusUrls()
+#populateSampleData()

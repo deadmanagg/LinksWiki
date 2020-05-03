@@ -35,9 +35,10 @@ import time
 def startES():
     while True:
         ### Show today's date and time ##
-        indexAllRecords()
+        #indexAllRecords()
+        indexRecords()
         #### Delay for 1 seconds ####
-        time.sleep(10000)
+        time.sleep(5)
         
 
 startES() 
